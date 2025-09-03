@@ -27,7 +27,7 @@ def create_phone(phone: Phone):
     phones_db.append(phone)
     return {"message": "Phone created successfully", "phone": phone}
 
-# GET /phones
+#GET /phones
 @app.get("/phones", response_model=List[Phone])
 def get_all_phones():
     return phones_db
